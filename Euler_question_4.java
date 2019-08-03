@@ -1,8 +1,8 @@
 
 public class Euler_question_4 {
-		public static long reverse(long n)
+		public static int reverse(int n)
 		{
-			long rev=0,r;
+			int rev=0,r;
 			while(n>0)
 			{
 				r=n%10;
@@ -12,28 +12,19 @@ public class Euler_question_4 {
 			}
 			return rev;
 		}
-		public static long largestPalindrome(long a,long b)
-		{
-			long m=0;
-			long  i,j,p;
-			for(i=a;i>99;i--)
-			{
-				for(j=b;j>=i;j--)
-				{
-					p=i*j;
-					if(isPalindrome(p))
-					m=Math.max(m, p);	
-					}
-				}
-				return m;
-
-		}
-		public static boolean isPalindrome(long n)
-		{
-			return reverse(n)==n;
-		}
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		System.out.println(largestPalindrome(999,999));
-
+	int  p;
+	int m=0;
+		for(int i=100;i<=999;i++)
+		{
+			for(int j=i;j<=999;j++)
+			{
+				p=i*j;
+				int k=reverse(p);
+				if(p==k)
+				m=Math.max(m, k);
+			}
+		}
+		System.out.println(m);
 	}}
