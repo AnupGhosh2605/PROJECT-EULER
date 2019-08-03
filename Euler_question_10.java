@@ -1,14 +1,13 @@
 
- class Euler_question_10 {
-   static boolean isprime(int  a)
+class Euler_question_10 {
+   public static boolean isprime(int  a)
 {
-	   if(a==2)
-		   return true;
-	   else if(a%2==0)
-		   return false;
-	for(long i=3;i*i<=a;i++)
+	  int counter=0;
+	for(long i=1;i<=(long)Math.sqrt(a);i++) 
 	{
 		if(a%i==0)
+			counter++;
+		if(counter>1)
 			return false;
 	}
 		return true;
@@ -18,7 +17,7 @@
 		// TODO Auto-generated method stub
 		int x=2000000;
 		long sum=0;
-			for(int i=2;i<=x;i++)
+			for(int i=2;i<x;i++)
 			{
 				if(isprime(i)==true)
 				{
