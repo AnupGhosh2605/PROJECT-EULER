@@ -17,14 +17,14 @@ class Euler_question_10 {
 		// TODO Auto-generated method stub
 		int x=2000000;
 		long sum=0;
-			for(int i=2;i<x;i++)
+			for(int i=3;i<x;i=i+2)
 			{
 				if(isprime(i)==true)
 				{
 				sum+=i;
 				}
 			}
-	System.out.println("Sum of the primes numbers is ="+sum);
+	System.out.println("Sum of the primes numbers is ="+(sum+2));
 
 	}
 }
