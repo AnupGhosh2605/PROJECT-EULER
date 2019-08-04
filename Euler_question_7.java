@@ -14,8 +14,8 @@ public class Euler_question_7 {
 	}
 	public static void main (String[]args) {
 		int c=0;
-		int n=0;
-	for(int i=2;i>0;i++)
+		int n=1;
+	for(int i=3;i>0;i=i+2)
 	{
 		if(isprime(i)==true)
 			c++;
