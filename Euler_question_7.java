@@ -15,19 +15,21 @@ public class Euler_question_7 {
 	public static void main (String[]args) {
 		int c=0;
 		int n=1;
-	for(int i=3;i>0;i=i+2)
+		int i;
+	for(i=3;i>0;i=i+2)
 	{
 		if(isprime(i)==true)
+		{
 			c++;
-	if(c==1)
-	{
-		n++;
-	}
+		        n++;
+		}
 	if(n==10001)
 	{
 		System.out.println("10001st prime number is "+i);
 		break;
 	}
+	
 	c=0;
 	}
-	}}
+	}
+}
