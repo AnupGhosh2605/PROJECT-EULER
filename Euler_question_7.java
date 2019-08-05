@@ -13,14 +13,12 @@ public class Euler_question_7 {
 			return true;
 	}
 	public static void main (String[]args) {
-		int c=0;
 		int n=1;
 		int i;
 	for(i=3;i>0;i=i+2)
 	{
 		if(isprime(i)==true)
 		{
-			c++;
 		        n++;
 		}
 	if(n==10001)
@@ -28,8 +26,6 @@ public class Euler_question_7 {
 		System.out.println("10001st prime number is "+i);
 		break;
 	}
-	
-	c=0;
 	}
 	}
 }
