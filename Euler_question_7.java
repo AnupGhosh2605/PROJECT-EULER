@@ -3,7 +3,7 @@ public class Euler_question_7 {
 	public static boolean isprime(int  a)
 	{
 		  int counter=0;
-		for(long i=1;i<=(long)Math.sqrt(a);i++) 
+		for(long i=3;i<=(long)Math.sqrt(a);i=i+2)  
 		{
 			if(a%i==0)
 				counter++;
